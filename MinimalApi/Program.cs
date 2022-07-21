@@ -1,9 +1,11 @@
+using System.Linq;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+Console.WriteLine("Test");
 
 //comentando el codigo
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Hello World2!");
 
 // /hello?name=name
 app.MapGet("/hello", (string name) => $"Hola {name}");
